@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <title>We-Flow-Login-page</title>
+  </head>
+  <body>
+    <!--MAIN CODE BASE-->
+    <main class="login-container">
+      <!--UNDER-->
+      <section class="left-side">
+        <!--from there-->
+
+        <div class="main-con">
+          <div class="logo-career">
+            <div class="logo-main">W</div>
+            <a href="#A" style="color: #ffffff">We<span>flow</span></a>
+          </div>
+          <div class="txt-con">
+            <h1>Welcome <span>back!</span></h1>
+
+            <p>
+              Manage your work, task and projects <br />
+              from one simple dashboard.
+            </p>
+          </div>
+        </div>
+        <img src="./images/flowly.png" alt="dashboard-image" class="image" />
+        <!--NEXT-->
+        <div class="same-con">
+          <!--con-->
+          <div class="same">
+            <!-- 2. TRACK PROGRESS -->
+            <div class="card">
+              <div class="icon-box">
+                <i class="fa-solid fa-chart-simple"></i>
+              </div>
+              <h3>Track Progress</h3>
+              <p>See how your projects are moving<br />forward</p>
+            </div>
+          </div>
+
+          <div class="same">
+            <!-- 3. WORK TOGETHER -->
+            <div class="card">
+              <div class="icon-box">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <h3>Work Together</h3>
+              <p>Collaborate with your team in real time.</p>
+            </div>
+          </div>
+
+          <div class="same">
+            <!-- 4. bolt-->
+            <div class="card">
+              <div class="icon-box">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h3>Boost Productivity</h3>
+              <p>Get more done with organized workflows.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="last-sec">
+          <p class="copyright">© 2026 Weflow. All rights reserved.</p>
+          <p class="copyright">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+2349039544601">Call Us 09039544601</a> or
+            <a href="https://wa.me/+2349039544601"
+              >Contact us on <i class="fa-brands fa-whatsapp"></i>whatsapp
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!--RIGTH SIDE-->
+      <section class="login-section">
+        <div class="first-div">
+          <div class="top-chat">
+            <a href="/new-project/docs/loader/load-home.html"
+              ><span><i class="fa-solid fa-house"></i>home</span></a
+            >
+            <p>
+              Don't have an account?
+              <a href="/new-project/docs/loader/load-sign.html">Sign up →</a>
+            </p>
+          </div>
+          <!--form section-->
+          <nav class="form-wrapper">
+            <div id="form-con">
+              <div class="logo-container">
+                <div class="logo-style">W</div>
+                <p class="logo">
+                  <span style="color: #bdb9b9">We</span
+                  ><span id="span-1">flow</span>
+                </p>
+              </div>
+              <div class="head-txt">
+                <h1>Welcome back</h1>
+                <p>Log in to your weflow account to continue</p>
+              </div>
+              <nav class="form-main">
+                <div class="sift">
+                  <label>Email address</label><br />
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="email"
+                    placeholder=" You@examlp.com"
+                    name="email"
+                    id="input-1"
+                    required
+                  />
+                </div>
+                <div class="sift">
+                  <label>Password</label><br />
+                  <i class="fa-solid fa-lock"></i>
+                  <input
+                    type="password"
+                    placeholder=" Enter your password"
+                    name="password"
+                    id="input-1"
+                    required
+                  />
+                </div>
+              </nav>
+              <nav class="last-div">
+                <div class="terms-con">
+                  <label for="checkbox">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      id="terms"
+                      required
+                    /><span> Remember me</span></label
+                  >
+                  <a href="#a">Forgot password?</a>
+                </div>
+                <button
+                  class="login-btn"
+                  type="submit"
+                  onclick="CredentialsContainer"
+                >
+                  LOG IN →
+                </button>
+
+                <div class="or">
+                  <div class="line"></div>
+                  <p>or continue with</p>
+                  <div class="line"></div>
+                </div>
+
+                <button class="google-btn">
+                  <!-- REAL GOOGLE ICON -->
+                  <span>
+                    <svg width="20" height="20" viewBox="0 0 48 48">
+                      <path
+                        fill="#EA4335"
+                        d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+                      />
+                      <path
+                        fill="#4285F4"
+                        d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+                      />
+                      <path
+                        fill="#FBBC05"
+                        d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+                      />
+                      <path
+                        fill="#34A853"
+                        d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+                      />
+                      <path fill="none" d="M0 0h48v48H0z" />
+                    </svg>
+                    Continue with Google
+                  </span>
+                </button>
+                <p class="dn">
+                  Don't have an account?
+                  <a href="./loader/load-sign.html" class="dna">sign up</a>
+                </p>
+              </nav>
+            </div>
+          </nav>
+          <nav class="space"></nav>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

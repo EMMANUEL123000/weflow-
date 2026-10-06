@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  color: #172033;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-size: cover;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background:
+    linear-gradient(rgba(137, 43, 226, 0.143)), url("./images/background.png");
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+  color: #6b7280;
+  width: 18px;
+  height: 18px;
+}
+.iconn {
+  width: 10%;
+  height: 10%;
+  margin-top: 60px;
+  background-color: blue;
+}
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.signup-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+/* =========================
+   LEFT / WELCOME SECTION
+========================= */
+
+.welcome-section {
+  position: relative;
+  overflow: hidden;
+  padding: 45px 8%;
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(132, 94, 255, 0.45),
+      transparent 35%
+    ),
+    linear-gradient(135deg, #171b4b, #332477 55%, #5140a4);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Decorative circles */
+
+.welcome-section::before,
+.welcome-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.welcome-section::before {
+  width: 300px;
+  height: 300px;
+  right: -130px;
+  top: 15%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.welcome-section::after {
+  width: 450px;
+  height: 450px;
+  left: -250px;
+  bottom: -220px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.fa-house {
+  font-size: 15px;
+  margin-right: 8px;
+  color: grey;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  font-size: 23px;
+  font-weight: 700;
+
+  position: relative;
+  z-index: 2;
+}
+
+.brand-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: linear-gradient(135deg, #8c7aff, #6352e8);
+
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   WELCOME CONTENT
+========================= */
+
+.welcome-content {
+  max-width: 520px;
+  margin: auto 0;
+  position: relative;
+  z-index: 2;
+}
+
+.tag {
+  display: inline-block;
+
+  margin-bottom: 20px;
+  padding: 7px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+
+  color: #c9c2ff;
+  background: rgba(255, 255, 255, 0.06);
+
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.welcome-content h1 {
+  font-size: clamp(38px, 4vw, 62px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.welcome-content h1 span {
+  color: #a99cff;
+}
+
+.description {
+  max-width: 470px;
+  margin-top: 25px;
+
+  color: #d2d1e5;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  color: #e7e5f2;
+  font-size: 14px;
+}
+
+.features div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.check {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: rgba(139, 124, 255, 0.25);
+
+  color: #b8adff;
+  font-size: 13px;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.copyright {
+  position: relative;
+  z-index: 2;
+
+  color: #aaa9c6;
+  font-size: 12px;
+}
+.copyright a {
+  color: #c9c2ff;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 8%;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 450px;
+}
+
+.form-wrapper h2 {
+  font-size: 31px;
+  letter-spacing: -0.8px;
+  color: #151a2d;
+}
+
+.subtitle {
+  margin-top: 8px;
+  margin-bottom: 28px;
+
+  color: #777d91;
+  font-size: 14px;
+}
+
+/* Mobile logo hidden on desktop */
+
+.mobile-logo {
+  display: none;
+}
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
+
+.google-btn {
+  width: 100%;
+  height: 52px;
+
+  border: 1px solid #e1e4ec;
+  border-radius: 10px;
+
+  background: white;
+  color: #9ca1b0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  transition: 0.2s ease;
+}
+.google-btn:hover {
+  background: #f8f9fc;
+  border-color: #cfd3df;
+}
+
+.google-icon {
+  font-size: 19px;
+  font-weight: bold;
+  color: #4285f4;
+}
+.google-btn i {
+  color: #4285f4;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin: 25px 0;
+
+  color: #9ca1b0;
+  font-size: 11px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #e7e9ef;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #34394b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+
+  padding: 0 15px;
+
+  border: 1px solid #dfe2ea;
+  border-radius: 9px;
+
+  outline: none;
+
+  color: #202538;
+  background: #ffffff;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.input-group input::placeholder {
+  color: #a7abb8;
+}
+
+.input-group input:focus {
+  border-color: #7160e8;
+
+  box-shadow: 0 0 0 3px rgba(113, 96, 232, 0.1);
+}
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin: 5px 0 22px;
+
+  color: #777d91;
+  font-size: 12px;
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+.terms input {
+  margin-top: 2px;
+  accent-color: #6c5ce7;
+}
+
+a {
+  color: #6352d9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   SIGN UP BUTTON
+========================= */
+
+.signup-btn {
+  width: 100%;
+  height: 52px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #7564ed, #5947ce);
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  box-shadow: 0 8px 20px rgba(98, 79, 216, 0.25);
+
+  transition: 0.2s ease;
+}
+
+.signup-btn span {
+  font-size: 18px;
+}
+
+.signup-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow: 0 12px 25px rgba(98, 79, 216, 0.32);
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.login-text {
+  margin-top: 24px;
+
+  text-align: center;
+
+  color: #858a9b;
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 850px) {
+  .signup-container {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome-section {
+    display: none;
+  }
+
+  .form-section {
+    min-height: 100vh;
+    padding: 35px 25px;
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-bottom: 45px;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #171b2d;
+  }
+
+  .form-wrapper h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-section {
+    padding: 25px 20px;
+  }
+
+  .mobile-logo {
+    margin-bottom: 35px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    margin-bottom: 23px;
+  }
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+.img {
+  height: 35%;
+  margin-bottom: 45px;
+  border-radius: 11px;
+}
+.a- i {
+  color: inherit;
+}
